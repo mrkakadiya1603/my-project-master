@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script:wght@600&display=swap');
 
 .homeContainer {
     
@@ -10,10 +12,10 @@
         height: 800px;
         min-height: 500px;
         width: 100%;
-        
+        font-family: 'Lobster', cursive;
         text-align: center;
         overflow: hidden;
-    
+        font-family: 'Dancing Script', cursive;
 }
 
 
@@ -134,7 +136,7 @@ homeContainer:before {
     color: #444444;
     text-align: center;
     font-size: 100%;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Dancing Script', cursive;
     margin-bottom: 20px;
 }
 
@@ -151,11 +153,11 @@ homeContainer:before {
 }
 
 .homeName {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 1800;
     margin: 0px;
     color: white;
-    font-family: 'Vazir', sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 .connectContainer {
@@ -231,7 +233,7 @@ homeContainer:before {
     outline: 0;
     vertical-align: baseline;
     background: transparent;
-    font: 18px/1.9em 'librebaskerville-regular', serif;
+    font: 28px/1.9em 'librebaskerville-regular', serif;
     color: #ddd;
     margin: 0 auto;
     width: 70%;
@@ -241,6 +243,7 @@ homeContainer:before {
     animation-iteration-count: 1;
     opacity: 1;
     animation-name: react-reveal-398225940875871-1;
+    font-family: 'Dancing Script', cursive;
 }
 
 

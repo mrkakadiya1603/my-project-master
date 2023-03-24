@@ -76,16 +76,7 @@ const Home = () => {
               <span style={{ fontSize: "25px", color: "lightgray" }}> 's</span>
             </p>
           </div>
-          {/* <div className="connectContainer">
-            <div className="connectInfo">
-              <div className="email">
-                <strong>email:</strong>
-                <a href="mailto:bethding0923@gmail.com" className="myemail">
-                  bethding0923@gmail.com
-                </a>
-              </div>
-            </div>
-          </div> */}
+       
           <div className="desc">
            I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page.
           </div>
@@ -101,3 +92,4 @@ const Home = () => {
 
 export default Home;
  
+
