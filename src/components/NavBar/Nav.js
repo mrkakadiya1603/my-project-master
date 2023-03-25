@@ -11,6 +11,23 @@ import MenuItem from '@mui/material/MenuItem';
 
 const Nav = () => {
 
+
+    useEffect(() => {
+        let timerId;
+        const handleScroll = () => {
+          setVisible(false);
+          clearTimeout(timerId);
+          timerId = setTimeout(() => {
+            setVisible(true);
+          }, 500);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+          clearTimeout(timerId);
+        };
+      }, []);
+
     const location = useLocation();
     const history = useHistory();
     const path = location.hash;
