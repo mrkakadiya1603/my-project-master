@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Shortfin Marko Shark",
+        "description": "It also known as blue pointer and it has buller-shaped body that is built for speed",
+        "image": "https://cdn.britannica.com/79/65379-050-5CF52BAC/Shortfin-mako-shark-seas.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Nurse Shark",
+        "description": "Nurse sharks are known for being the most inactive type of shark on the block. In the summer, they get a new set of teeth every 10-20 days.",
+        "image": "https://welovesharks.club/wp-content/uploads/2017/04/Depositphotos_99722956_m-2015.jpg"
+    }
+] 
