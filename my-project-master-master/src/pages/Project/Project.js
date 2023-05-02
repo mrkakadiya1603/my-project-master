@@ -14,7 +14,7 @@ export default function Project() {
       .get(" http://localhost:5000/sharks")
       .then((response) => {
         setSharkData(response.data);
-        console.log("data", response);
+        // console.log("data", response);
       })
       .catch((error) => {
         console.log(error);

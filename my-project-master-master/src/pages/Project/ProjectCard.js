@@ -1,7 +1,7 @@
 // import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./Project.css";
- 
+ import logo from  '../../assets/images/brain_icon.png'
 // Shark.propTypes = {
 //   item: PropTypes.string,
 // };
@@ -17,9 +17,9 @@ const Shark = (props) => {
     }} >
         <div
           className="h-2/4 bg-blue-100 overflow-hidden object-cover"
-          onClick={console.log("dfsbsdjhbsbbjfb")}
+          // onClick={console.log("dfsbsdjhbsbbjfb")}
         >
-          {console.log("item.id", item.id)}
+          {/* {console.log("item.id", item.id)} */}
           <img
             className="w-full h-60 origin-center"
             alt="img"

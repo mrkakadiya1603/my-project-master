@@ -50,68 +50,99 @@ const Contact = () => {
   };
 
   return (
-    <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <div className="mb-4">
-        <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
-          Name:
-        </label>
-        <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="name"
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleInputChange}
-          placeholder="John Doe"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
-          Email:
-        </label>
-        <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="email"
-          type="text"
-          name="email"
-          value={formData.email}
-          onChange={handleInputChange}
-          placeholder="johndoe@example.com"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2 text-gray-700 font-bold" htmlFor="subject">
-          Subject:
-        </label>
-        <input
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="subject"
-          type="text"
-          name="subject"
-          value={formData.subject}
-          onChange={handleInputChange}
-          placeholder="Website feedback"
-        />
-      </div>
-      <div className="mb-6">
-        <label className="block mb-2 text-gray-700 font-bold" htmlFor="message">
-          Message:
-        </label>
-        <textarea
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleInputChange}
-          placeholder="Enter your message here..."
-        />
-      </div>
-      <div className="flex items-center justify-between">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" onClick={submitEmail}>
-          Submit
-        </button>
-      </div>
-    </form>
+//     <div className="bg-white rounded-md shadow-md p-6 max-w-md mx-auto">
+//   <h2 className="text-xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+//   <form>
+//     <div className="mb-4">
+//       <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+//         Name
+//       </label>
+//       <input
+//         className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//         type="text"
+//         id="name"
+//         name="name"
+//         placeholder="John Doe"
+//         value={formData.name}
+//         onChange={handleInputChange}
+//       />
+//     </div>
+//     <div className="mb-4">
+//       <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
+//         Email
+//       </label>
+//       <input
+//         className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//         type="email"
+//         id="email"
+//         name="email"
+//         placeholder="johndoe@example.com"
+//         value={formData.email}
+//         onChange={handleInputChange}
+//       />
+//     </div>
+//     <div className="mb-4">
+//       <label className="block text-gray-700 font-bold mb-2" htmlFor="subject">
+//         Subject
+//       </label>
+//       <input
+//         className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//         type="text"
+//         id="subject"
+//         name="subject"
+//         placeholder="Website feedback"
+//         value={formData.subject}
+//         onChange={handleInputChange}
+//       />
+//     </div>
+//     <div className="mb-4">
+//       <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
+//         Message
+//       </label>
+//       <textarea
+//         className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//         id="message"
+//         name="message"
+//         placeholder="Enter your message here..."
+//         value={formData.message}
+//         onChange={handleInputChange}
+//       ></textarea>
+//     </div>
+//     <div className="flex items-center justify-end">
+//       <button
+//         className="inline-block px-4 py-2 text-white font-semibold bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+//         type="submit"
+//         onClick={submitEmail}
+//       >
+//         Submit
+//       </button>
+//     </div>
+//   </form>
+// </div>
+<div id="contact" className="grid  max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 my-8 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
+	<div className="flex flex-col justify-between">
+		<div className="space-y-2">
+			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
+			<div className="dark:text-gray-400">Vivamus in nisl metus? Phasellus.</div>
+		</div>
+		<img src="../../assets/images/blog_display.jpeg" alt="" className="p-6 h-52 md:h-64" />
+	</div>
+	<form novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
+		<div>
+			<label for="name" className="text-sm">Full name</label>
+			<input id="name" type="text" placeholder="" className="w-full p-3 border-solid border-2 border-black-500 rounded " />
+		</div>
+		<div>
+			<label for="email" className="text-sm">Email</label>
+			<input id="email" type="email" className="w-full p-3 border-solid border-2 border-black-500 rounded " />
+		</div>
+		<div>
+			<label for="message" className="text-sm">Message</label>
+			<textarea id="message" rows="3" className="w-full p-3 border-solid border-2 border-black-500 rounded "></textarea>
+		</div>
+		<button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-400 dark:text-gray-900">Send Message</button>
+	</form>
+</div>
   );
 };
 

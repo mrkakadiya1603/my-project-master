@@ -7,22 +7,17 @@ import Contact from "../pages/Contact/Contact";
 
 import Projects from "../pages/Project/Project";
 
-
-
 const Portfolio = () => {
+  return (
+    <div>
+      <Home />
+      <Skill />
+      <Projects />
 
-    
-    return (
-        <div>
-
-            <Home />
-            <Skill />
-            <Projects />
-            
-            <Exp />
-            <Contact />
-        </div>
-    )
-}
+      <Exp />
+      <Contact />
+    </div>
+  );
+};
 
 export default Portfolio;

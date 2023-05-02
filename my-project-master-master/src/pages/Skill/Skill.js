@@ -44,7 +44,7 @@ import './Skill.css';
 
 const Skills = () => {
   return (
-    <div className="bg-gray-900 py-12">
+    <div id="skill" className="bg-gray-900 py-12">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-white">Our Skills</h2>
         <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">

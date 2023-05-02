@@ -56,7 +56,7 @@ import React from "react";
 
 function Exp() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
+    <div id="experience" className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">Tailwind CSS Component Experience Page</h1>
       <div className="flex flex-wrap justify-center">
         <div className="w-72 h-72 bg-white shadow-lg rounded-lg overflow-hidden mx-4 my-8 transform hover:-translate-y-1 transition duration-500 ease-in-out">
